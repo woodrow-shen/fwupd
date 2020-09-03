@@ -1,0 +1,14 @@
+# Hyper USB-C Hub
+[DeviceInstanceId=USB\VID_2D01&PID_0385]
+Plugin = vli
+GType = FuVliUsbhubDevice
+Flags = usb3,has-shared-spi-pd
+CounterpartGuid = USB\VID_2D01&PID_0382
+[DeviceInstanceId=USB\VID_2D01&PID_0382]
+Plugin = vli
+GType = FuVliUsbhubDevice
+Flags = usb2,has-shared-spi-pd
+ParentGuid = USB\VID_2D01&PID_0385
+[DeviceInstanceId=USB\VID_2D01&PID_0380]
+ProxyGuid = USB\VID_2D01&PID_0385
+FirmwareSize = 0x8000

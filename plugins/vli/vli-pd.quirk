@@ -135,3 +135,8 @@ GType = FuVliPdDevice
 [DeviceInstanceId=USB\VID_2109&PID_888F]
 Plugin = vli
 GType = FuVliPdDevice
+
+#Hyper
+[DeviceInstanceId=USB\VID_2D01&PID_0380]
+Plugin = vli
+GType = FuVliPdDevice

@@ -96,6 +96,8 @@ fu_vli_common_device_kind_to_string (FuVliDeviceKind device_kind)
 		return "PS186";
 	if (device_kind == FU_VLI_DEVICE_KIND_RTD21XX)
 		return "RTD21XX";
+	if (device_kind == FU_VLI_DEVICE_KIND_HYPER)
+		return "HYPER";
 	return NULL;
 }
 
@@ -154,6 +156,8 @@ fu_vli_common_device_kind_from_string (const gchar *device_kind)
 		return FU_VLI_DEVICE_KIND_PS186;
 	if (g_strcmp0 (device_kind, "RTD21XX") == 0)
 		return FU_VLI_DEVICE_KIND_RTD21XX;
+	if (g_strcmp0 (device_kind, "HYPER") == 0)
+		return FU_VLI_DEVICE_KIND_HYPER;
 	return FU_VLI_DEVICE_KIND_UNKNOWN;
 }
 
